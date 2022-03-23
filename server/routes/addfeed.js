@@ -15,7 +15,7 @@ router.route("/").post((req, res) => {
       !user
         ? res
             .status(404)
-            .json({ message: "feed added, but no posts with this ID" })
+            .json({ message: "feed added, but no users with this id" })
         : res.json({ message: "feed added" })
     )
     .catch((err) => {
